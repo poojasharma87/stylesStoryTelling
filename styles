@@ -1,12 +1,71 @@
-profile Screen styles:
+//StoryCard Screen
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  cardContainer: {
+    margin: RFValue(13),
+    backgroundColor: "#2f345d",
+    borderRadius: RFValue(20)
+  },
+  storyImage: {
+    resizeMode: "contain",
+    width: "95%",
+    alignSelf: "center",
+    height: RFValue(250)
+  },
+  titleContainer: {
+    paddingLeft: RFValue(20),
+    justifyContent: "center"
+  },
+  storyTitleText: {
+    fontSize: RFValue(25),
+    fontFamily: "Bubblegum-Sans",
+    color: "white"
+  },
+  storyAuthorText: {
+    fontSize: RFValue(18),
+    fontFamily: "Bubblegum-Sans",
+    color: "white"
+  },
+  descriptionText: {
+    fontFamily: "Bubblegum-Sans",
+    fontSize: 13,
+    color: "white",
+    paddingTop: RFValue(10)
+  },
+  actionContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    padding: RFValue(10)
+  },
+  likeButton: {
+    width: RFValue(160),
+    height: RFValue(40),
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    backgroundColor: "#eb3948",
+    borderRadius: RFValue(30)
+  },
+  likeText: {
+    color: "white",
+    fontFamily: "Bubblegum-Sans",
+    fontSize: RFValue(25),
+    marginLeft: RFValue(5)
+  }
+});
 
- container: {
+//feedScreen
+
+const styles = StyleSheet.create({
+  container: {
     flex: 1,
     backgroundColor: "#15193c"
   },
   droidSafeArea: {
-    marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
+    marginTop: Platform.OS === "android" ? StatusBar.currentHeight : RFValue(35)
   },
   appTitle: {
     flex: 0.07,
@@ -31,94 +90,7 @@ profile Screen styles:
     fontSize: RFValue(28),
     fontFamily: "Bubblegum-Sans"
   },
-  screenContainer: {
-    flex: 0.85
-  },
-  profileImageContainer: {
-    flex: 0.5,
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  profileImage: {
-    width: RFValue(140),
-    height: RFValue(140),
-    borderRadius: RFValue(70)
-  },
-  nameText: {
-    color: "white",
-    fontSize: RFValue(40),
-    fontFamily: "Bubblegum-Sans",
-    marginTop: RFValue(10)
-  },
-  themeContainer: {
-    flex: 0.2,
-    flexDirection: "row",
-    justifyContent: "center",
-    marginTop: RFValue(20)
-  },
-  themeText: {
-    color: "white",
-    fontSize: RFValue(30),
-    fontFamily: "Bubblegum-Sans",
-    marginRight: RFValue(15)
+  cardContainer: {
+    flex: 0.93
   }
-  
-  login screen styles:
-  
-  
-  container: {
-    flex: 1,
-    backgroundColor: "#15193c"
-  },
-  droidSafeArea: {
-    marginTop: Platform.OS === "android" ? StatusBar.currentHeight : RFValue(35)
-  },
-  appTitle: {
-    flex: 0.4,
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  appIcon: {
-    width: RFValue(130),
-    height: RFValue(130),
-    resizeMode: "contain"
-  },
-  appTitleText: {
-    color: "white",
-    textAlign: "center",
-    fontSize: RFValue(40),
-    fontFamily: "Bubblegum-Sans"
-  },
-  buttonContainer: {
-    flex: 0.3,
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  button: {
-    width: RFValue(250),
-    height: RFValue(50),
-    flexDirection: "row",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    borderRadius: RFValue(30),
-    backgroundColor: "white"
-  },
-  googleIcon: {
-    width: RFValue(30),
-    height: RFValue(30),
-    resizeMode: "contain"
-  },
-  googleText: {
-    color: "black",
-    fontSize: RFValue(20),
-    fontFamily: "Bubblegum-Sans"
-  },
-  cloudContainer: {
-    flex: 0.3
-  },
-  cloudImage: {
-    position: "absolute",
-    width: "100%",
-    resizeMode: "contain",
-    bottom: RFValue(-5)
-  }
+});
