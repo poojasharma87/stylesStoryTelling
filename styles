@@ -1,96 +1,34 @@
-//StoryCard Screen
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
-  cardContainer: {
-    margin: RFValue(13),
-    backgroundColor: "#2f345d",
-    borderRadius: RFValue(20)
-  },
-  storyImage: {
-    resizeMode: "contain",
-    width: "95%",
-    alignSelf: "center",
-    height: RFValue(250)
-  },
-  titleContainer: {
-    paddingLeft: RFValue(20),
-    justifyContent: "center"
-  },
-  storyTitleText: {
-    fontSize: RFValue(25),
-    fontFamily: "Bubblegum-Sans",
-    color: "white"
-  },
-  storyAuthorText: {
-    fontSize: RFValue(18),
-    fontFamily: "Bubblegum-Sans",
-    color: "white"
-  },
-  descriptionText: {
-    fontFamily: "Bubblegum-Sans",
-    fontSize: 13,
-    color: "white",
-    paddingTop: RFValue(10)
-  },
-  actionContainer: {
-    justifyContent: "center",
-    alignItems: "center",
-    padding: RFValue(10)
-  },
-  likeButton: {
-    width: RFValue(160),
-    height: RFValue(40),
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row",
-    backgroundColor: "#eb3948",
-    borderRadius: RFValue(30)
-  },
-  likeText: {
-    color: "white",
-    fontFamily: "Bubblegum-Sans",
-    fontSize: RFValue(25),
-    marginLeft: RFValue(5)
-  }
-});
-
-//feedScreen
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#15193c"
-  },
-  droidSafeArea: {
-    marginTop: Platform.OS === "android" ? StatusBar.currentHeight : RFValue(35)
-  },
-  appTitle: {
-    flex: 0.07,
-    flexDirection: "row"
-  },
-  appIcon: {
+buttonContainer: {
     flex: 0.3,
     justifyContent: "center",
     alignItems: "center"
   },
-  iconImage: {
-    width: "100%",
-    height: "100%",
+  button: {
+    width: RFValue(250),
+    height: RFValue(50),
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    borderRadius: RFValue(30),
+    backgroundColor: "white"
+  },
+  googleIcon: {
+    width: RFValue(30),
+    height: RFValue(30),
     resizeMode: "contain"
   },
-  appTitleTextContainer: {
-    flex: 0.7,
-    justifyContent: "center"
-  },
-  appTitleText: {
-    color: "white",
-    fontSize: RFValue(28),
+  googleText: {
+    color: "black",
+    fontSize: RFValue(20),
     fontFamily: "Bubblegum-Sans"
   },
-  cardContainer: {
-    flex: 0.93
+  cloudContainer: {
+    flex: 0.3
+  },
+  cloudImage: {
+    position: "absolute",
+    width: "100%",
+    resizeMode: "contain",
+    bottom: RFValue(-5)
   }
 });
