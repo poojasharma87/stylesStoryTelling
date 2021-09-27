@@ -1,9 +1,13 @@
-// create story styles
+// Profile Screen
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#15193c"
+  },
+  containerLight: {
+    flex: 1,
+    backgroundColor: "white"
   },
   droidSafeArea: {
     marginTop: Platform.OS === "android" ? StatusBar.currentHeight : RFValue(35)
@@ -31,31 +35,53 @@ const styles = StyleSheet.create({
     fontSize: RFValue(28),
     fontFamily: "Bubblegum-Sans"
   },
-  fieldsContainer: {
-    flex: 0.85
-  },
-  previewImage: {
-    width: "93%",
-    height: RFValue(250),
-    alignSelf: "center",
-    borderRadius: RFValue(10),
-    marginVertical: RFValue(10),
-    resizeMode: "contain"
-  },
-  inputFont: {
-    height: RFValue(40),
-    borderColor: "white",
-    borderWidth: RFValue(1),
-    borderRadius: RFValue(10),
-    paddingLeft: RFValue(10),
-    color: "white",
+  appTitleTextLight: {
+    color: "black",
+    fontSize: RFValue(28),
     fontFamily: "Bubblegum-Sans"
   },
-  inputFontExtra: {
-    marginTop: RFValue(15)
+  screenContainer: {
+    flex: 0.85
   },
-  inputTextBig: {
-    textAlignVertical: "top",
-    padding: RFValue(5)
+  profileImageContainer: {
+    flex: 0.5,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  profileImage: {
+    width: RFValue(140),
+    height: RFValue(140),
+    borderRadius: RFValue(70)
+  },
+
+  nameText: {
+    color: "white",
+    fontSize: RFValue(40),
+    fontFamily: "Bubblegum-Sans",
+    marginTop: RFValue(10)
+  },
+  nameTextLight: {
+    color: "black",
+    fontSize: RFValue(40),
+    fontFamily: "Bubblegum-Sans",
+    marginTop: RFValue(10)
+  },
+  themeContainer: {
+    flex: 0.2,
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: RFValue(20)
+  },
+  themeText: {
+    color: "white",
+    fontSize: RFValue(30),
+    fontFamily: "Bubblegum-Sans",
+    marginRight: RFValue(15)
+  },
+  themeTextLight: {
+    color: "black",
+    fontSize: RFValue(30),
+    fontFamily: "Bubblegum-Sans",
+    marginRight: RFValue(15)
   }
 });
